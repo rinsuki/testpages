@@ -9,11 +9,23 @@ body {
 .kern {
     font-feature-settings: "kern";
 }
+.palt {
+    font-feature-settings: "palt";
+}
+.no-palt {
+    font-feature-settings: "palt" 0;
+}
 </style>
 <body>
 <h2>default</h2>
-<p>YoYoYoチャンチャンチャン</p>
+<p>YoYoYoチャチャチャ</p>
 <h2>kern</h2>
-<p class="kern">YoYoYoチャンチャンチャン</p>
+<p class="kern">YoYoYoチャチャチャ</p>
+<h2>palt</h2>
+<p class="palt">YoYoYoチャチャチャ</p>
+<h2>kern palt</h2>
+<p class="kern palt">YoYoYoチャチャチャ</p>
+<h2>kern but no palt</h2>
+<p class="kern no-palt">YoYoYoチャチャチャ</p>
 </body>
 </html>
